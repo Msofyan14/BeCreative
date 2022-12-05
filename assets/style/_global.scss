@@ -1,0 +1,278 @@
+@import 'fonts';
+@import 'colors';
+@import 'button';
+
+* {
+    font-family: 'Work Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    transition: 0.3 ease-in-out all;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-margin {
+    margin-top: 180px;
+}
+
+.label-section {
+    font-weight: map-get($font-weights , medium);
+    font-size: 25px;
+    color: $hitam;
+}
+
+.heading-section {
+    font-weight: map-get($font-weights , medium);
+    font-size: 40px;
+    color: $hitam;
+
+    @include media-breakpoint-down(md) {
+        font-size: 30px;
+    }
+}
+
+.subheading-section {
+    font-weight: map-get($font-weights , light);
+    font-size: 18px;
+    color: $hitam;
+    @include media-breakpoint-down(md) {
+        font-size: 16px;
+    }
+    
+}
+
+// Home CSS
+.home {
+    background-color: $second-color;
+    padding-top: 180px;
+    height: 100vh;
+
+    .heading-home {
+        font-size: 46px;
+        color: $hitam;
+        font-weight: map-get($font-weights, bold );
+
+        .prop {
+            color: $first-color;
+        }
+    
+        .kre {
+            color: $button-color;
+        }
+
+        @include media-breakpoint-between(md,lg) {
+            font-size: 36px;
+        }
+        @include media-breakpoint-down(sm) {
+            font-size: 30px;
+        }
+    }
+
+    .subheading-home {
+        font-size: 20px;
+        color: $hitam;
+        font-weight: map-get($font-weights, light);
+
+        @include media-breakpoint-down(md) {
+            font-size: 16px;
+        }
+    }
+
+    .btn-home {
+        margin-top: 125px;
+
+        @include media-breakpoint-down(md) {
+            margin-top: 100px;
+        }
+    }
+
+    .img-home {
+        @include media-breakpoint-between(md,lg) {
+            max-width: 620px;
+            max-height: 500px;
+        }
+    }
+
+}
+
+
+//kategori
+
+.category {
+    i {
+        font-size: 40px;
+        color: $first-color;
+    }
+    .label-section {
+        font-size: 25px;
+    }
+
+    .card {
+        border: 2px solid $first-color;
+
+        &:hover {
+            background-color: $first-color;
+
+        .category-name, .class {
+            color: #fff;
+        }
+        }
+
+        .category-name {
+            font-size: 20px;
+            color: $first-color;
+        }
+
+        .class {
+            color: $first-color ;
+        }
+    }
+}
+
+//Product
+
+.product {
+    i {
+        font-size: 40px;
+        color: $first-color;
+    }
+}
+
+.card {
+    border: none;
+
+    img {
+        transition: 330ms ease-in-out;
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.1);
+        }
+    }
+
+
+
+    .img-box {
+        max-width: 435px;
+        max-height: 290px;
+        border-radius: 10px;
+        overflow:hidden;
+        position: relative;
+
+        .bg-img {
+            background:linear-gradient(180deg, rgba(0, 0, 0, 0) 52.17%, #000000 100%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+    
+            .info {
+                position: absolute;
+                bottom: 20px;
+            }
+    
+            .member {
+                font-weight: map-get($font-weights, medium );
+                color: #fff;
+            }
+    
+            i {
+                font-size: 30px;
+                color: rgba(248, 248, 3, 0.808);
+            }
+        }
+    }
+
+    .product-caption {
+
+        a {
+            color: $hitam;
+            font-size: 16px;
+            font-weight: map-get($font-weights ,  light );
+        }
+
+        .product-name {
+            font-size: 20px;
+            font-weight: map-get($font-weights , medium );
+        }
+
+        
+        .price {
+            font-size: 25px;
+            font-weight: map-get($font-weights , bold );
+            color: $first-color;
+            
+        }
+
+       
+
+    }
+
+    
+}
+
+// about css
+.about {
+    .img-box {
+        max-width: 550PX;
+    }
+}
+
+// testi css
+.testi {
+    background: rgba(247, 110, 17, 0.1);
+
+    .card {
+        background-color: $first-color;
+        color: #fff;
+        padding: 40px 30px;
+        border-radius: 10px;
+        
+
+        .rate {
+            i {
+                font-size: 30px;
+                color: rgba(248, 248, 3, 0.808);
+                }   
+            }
+        .detail {
+            i {
+                    font-size: 40px;
+             }
+        }
+    
+    }
+
+}
+
+// footer css
+.footer {
+    background: rgba(247, 110, 17, 0.8);
+    border-radius: 50px 50px 0px 0px;
+    padding: 60px 0;
+
+    .sosmed{
+        i{
+            font-size:50px;
+        }
+    }
+
+    h3{
+        font-size: 20px;
+        color: #ECE7B4;
+        font-weight: map-get($font-weights , bold );
+    }
+
+    ul {
+        padding: 0;
+        margin-top: 20px;
+
+        li{
+            margin: 20px 0;
+        }
+    }
+}
