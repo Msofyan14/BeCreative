@@ -4,29 +4,9 @@ $(document).ready(()=>{
     })
 })
 
-// var swiper = new Swiper(".mySwiperTesti", {
-//     slidePerView: 3,
-//     spaceBetween: 30,
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//       dynamicBullets: true,
-//     },
-//     autoplay: {
-//         delay:1200,
-//     },
-//     breakpoints: {
-//         768:{
-//             slidePerView:2,
-//         },
-//         1200:{
-//             slidePerView:3,
-//         }
-//     }
-//   });
-
+//swiper js
 var swiper = new Swiper(".mySwiperTesti", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 30,
     pagination: {
       el: ".swiper-pagination",
@@ -35,4 +15,12 @@ var swiper = new Swiper(".mySwiperTesti", {
     autoplay: {
             delay:1200,
      },
+     breakpoints: {
+        768:{
+            slidesPerView:2,
+        },
+        1200: {
+            slidesPerView:3,
+        }
+     }
   });
