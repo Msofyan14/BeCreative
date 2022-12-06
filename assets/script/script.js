@@ -4,22 +4,35 @@ $(document).ready(()=>{
     })
 })
 
+// var swiper = new Swiper(".mySwiperTesti", {
+//     slidePerView: 3,
+//     spaceBetween: 30,
+//     pagination: {
+//       el: ".swiper-pagination",
+//       clickable: true,
+//       dynamicBullets: true,
+//     },
+//     autoplay: {
+//         delay:1200,
+//     },
+//     breakpoints: {
+//         768:{
+//             slidePerView:2,
+//         },
+//         1200:{
+//             slidePerView:3,
+//         }
+//     }
+//   });
+
 var swiper = new Swiper(".mySwiperTesti", {
-    spaceBetween: 20,
-    slidePerView: 1,
+    slidesPerView: 3,
+    spaceBetween: 30,
     pagination: {
       el: ".swiper-pagination",
-      dynamicBullets: true,
+      clickable: true
     },
     autoplay: {
-        delay:1200,
-    },
-    breakpoints: {
-        768:{
-            slidePerView:2,
-        },
-        1200:{
-            slidePerView:3,
-        }
-    }
+            delay:1200,
+     },
   });

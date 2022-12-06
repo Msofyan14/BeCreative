@@ -138,82 +138,84 @@ a {
         font-size: 40px;
         color: $first-color;
     }
-}
 
-.card {
-    border: none;
-
-    img {
-        transition: 330ms ease-in-out;
-    }
-
-    &:hover {
+    .card {
+        border: none;
+    
         img {
-            transform: scale(1.1);
+            transition: 330ms ease-in-out;
         }
-    }
-
-
-
-    .img-box {
-        max-width: 435px;
-        max-height: 290px;
-        border-radius: 10px;
-        overflow:hidden;
-        position: relative;
-
-        .bg-img {
-            background:linear-gradient(180deg, rgba(0, 0, 0, 0) 52.17%, #000000 100%);
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
     
-            .info {
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    
+    
+    
+        .img-box {
+            max-width: 435px;
+            max-height: 290px;
+            border-radius: 10px;
+            overflow:hidden;
+            position: relative;
+    
+            .bg-img {
+                background:linear-gradient(180deg, rgba(0, 0, 0, 0) 52.17%, #000000 100%);
                 position: absolute;
-                bottom: 20px;
-            }
-    
-            .member {
-                font-weight: map-get($font-weights, medium );
-                color: #fff;
-            }
-    
-            i {
-                font-size: 30px;
-                color: rgba(248, 248, 3, 0.808);
-            }
-        }
-    }
-
-    .product-caption {
-
-        a {
-            color: $hitam;
-            font-size: 16px;
-            font-weight: map-get($font-weights ,  light );
-        }
-
-        .product-name {
-            font-size: 20px;
-            font-weight: map-get($font-weights , medium );
-        }
-
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
         
-        .price {
-            font-size: 25px;
-            font-weight: map-get($font-weights , bold );
-            color: $first-color;
-            
+                .info {
+                    position: absolute;
+                    bottom: 20px;
+                }
+        
+                .member {
+                    font-weight: map-get($font-weights, medium );
+                    color: #fff;
+                }
+        
+                i {
+                    font-size: 30px;
+                    color: rgba(248, 248, 3, 0.808);
+                }
+            }
         }
-
-       
-
-    }
-
     
+        .product-caption {
+    
+            a {
+                color: $hitam;
+                font-size: 16px;
+                font-weight: map-get($font-weights ,  light );
+            }
+    
+            .product-name {
+                font-size: 20px;
+                font-weight: map-get($font-weights , medium );
+            }
+    
+            
+            .price {
+                font-size: 25px;
+                font-weight: map-get($font-weights , bold );
+                color: $first-color;
+                
+            }
+    
+           
+    
+        }
+    
+        
+    }
 }
+
+
 
 // about css
 .about {
@@ -223,6 +225,8 @@ a {
 }
 
 // testi css
+
+
 .testi {
     background: rgba(247, 110, 17, 0.1);
 
@@ -231,6 +235,7 @@ a {
         color: #fff;
         padding: 40px 30px;
         border-radius: 10px;
+        
         
 
         .rate {
@@ -276,3 +281,5 @@ a {
         }
     }
 }
+
+
